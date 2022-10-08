@@ -1,0 +1,28 @@
+﻿<Controls:MetroWindow x:Class="UltraWide_ScreenShare_MA.MainWindow"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+          xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+          Title="MainWindow"
+          Width="700"
+                      
+                      Height="600"
+          
+          ResizeMode="CanResize"
+         AllowsTransparency="True"
+          WindowStartupLocation="CenterScreen"
+                      Loaded="MetroWindow_Loaded" Background="Transparent">
+    
+        <simpleChildWindow:ChildWindow x:Name="child01"
+                                       Title="TestChild 1"
+                                       Margin="0"
+                                       Padding="0"
+                                       HorizontalContentAlignment="Stretch"
+                                       VerticalContentAlignment="Stretch"
+                                       CloseByEscape="False"
+                                       IsOpen="True"
+                                       Background="Red"
+                                       >
+        </simpleChildWindow:ChildWindow>
+   
+</Controls:MetroWindow>

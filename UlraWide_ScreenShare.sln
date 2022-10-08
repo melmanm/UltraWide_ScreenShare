@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UlraWide_ScreenShare", "UlraWide_ScreenShare\UlraWide_ScreenShare.csproj", "{D07D3B05-49FA-4F60-95D6-A375D2787184}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserActivity", "UserActivity\UserActivity.csproj", "{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magification.API", "Magification.API\Magification.API.csproj", "{42839FE7-30D0-47D6-A92B-E979DAEA4094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraWide_ScreenShare_MA", "UltraWide_ScreenShare_MA\UltraWide_ScreenShare_MA.csproj", "{EF0298F9-60D3-4A93-9A26-313CEC51D26A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Debug|x86.ActiveCfg = Debug|x86
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Debug|x86.Build.0 = Debug|x86
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Release|x86.ActiveCfg = Release|x86
+		{D07D3B05-49FA-4F60-95D6-A375D2787184}.Release|x86.Build.0 = Release|x86
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Debug|x86.ActiveCfg = Debug|x86
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Debug|x86.Build.0 = Debug|x86
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Release|x86.ActiveCfg = Release|x86
+		{6EACD0CD-23EE-41E2-B4A9-B5F3F06039F3}.Release|x86.Build.0 = Release|x86
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Debug|x86.Build.0 = Debug|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|x86.ActiveCfg = Release|Any CPU
+		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|x86.Build.0 = Release|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD4B3D35-277B-4121-A756-805F6BDA2BDE}
+	EndGlobalSection
+EndGlobal
