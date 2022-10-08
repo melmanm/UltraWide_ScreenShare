@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserActivity", "UserActivit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magification.API", "Magification.API\Magification.API.csproj", "{42839FE7-30D0-47D6-A92B-E979DAEA4094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraWide_ScreenShare_MA", "UltraWide_ScreenShare_MA\UltraWide_ScreenShare_MA.csproj", "{EF0298F9-60D3-4A93-9A26-313CEC51D26A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +41,6 @@ Global
 		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|x86.ActiveCfg = Release|Any CPU
 		{42839FE7-30D0-47D6-A92B-E979DAEA4094}.Release|x86.Build.0 = Release|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Debug|x86.Build.0 = Debug|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|x86.ActiveCfg = Release|Any CPU
-		{EF0298F9-60D3-4A93-9A26-313CEC51D26A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
