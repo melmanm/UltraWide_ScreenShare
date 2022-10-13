@@ -126,6 +126,15 @@ namespace Magification.API
         [DllImport("user32.dll", EntryPoint = "CreateWindowExW", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
         public extern static IntPtr CreateWindow(int dwExStyle, string lpClassName, string lpWindowName, int dwStyle, int x, int y, int nWidth, int nHeight, IntPtr hWndParent, IntPtr hMenu, IntPtr hInstance, IntPtr lParam);
 
+        [DllImport("user32.dll", EntryPoint = "DestroyWindow", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
+        public extern static IntPtr DestroyWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll", EntryPoint = "CloseWindow", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
+        public extern static IntPtr CloseWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll", EntryPoint = "ShowWindow", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
+        public extern static IntPtr ShowWindow(IntPtr hWnd, int nCmdShow);
+
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetLayeredWindowAttributes(IntPtr hwnd, int crKey, byte bAlpha, LayeredWindowAttributeFlags dwFlags);

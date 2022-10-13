@@ -323,7 +323,7 @@
                                             <ContentPresenter />
                                         </Grid>
                                         <Grid Grid.Row="1">
-                                            <Button Style="{StaticResource ArrowUpButton}"  HorizontalAlignment="Stretch" Name="ArrowUpButton" Height="{StaticResource HideShowBarHeight}" Opacity="{StaticResource StandardOpacity}"/>
+                                            <Button Style="{StaticResource ArrowUpButton}"  HorizontalAlignment="Stretch" Name="ArrowUpButton" Height="{StaticResource HideShowBarHeight}" Opacity="{StaticResource StandardOpacity}" Click="ArrowUpButton_Click"/>
                                         </Grid>
                                         <Grid Grid.Row="0" Opacity="{StaticResource StandardOpacity}" Height="{StaticResource MenuBarHeight}"  HorizontalAlignment="Stretch" VerticalAlignment="Top" Name="TopBar"  Background="{StaticResource TopBarBrush}">
                                             <Grid.ColumnDefinitions>
@@ -343,7 +343,7 @@
 
                                         </Grid>
                                         <Grid Grid.Row="0" >
-                                            <Button Style="{StaticResource ArrowDownButton}" Visibility="Collapsed" HorizontalAlignment="Stretch" Name="ArrowDownButton" Height="{StaticResource HideShowBarHeight}" Opacity="{StaticResource StandardOpacity}"/>
+                                            <Button Style="{StaticResource ArrowDownButton}" Visibility="Collapsed" HorizontalAlignment="Stretch" Name="ArrowDownButton" Height="{StaticResource HideShowBarHeight}" Opacity="{StaticResource StandardOpacity}" Click="ArrowDownButton_Click"/>
                                         </Grid>
 
                                     </Grid>
