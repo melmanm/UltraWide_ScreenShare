@@ -51,15 +51,16 @@ namespace Magification.API
 
         public void SetTransparentStyle()
         {
-            SetAlpha(150);
-            SetColorEffect();
+            NativeMethods.ShowWindow(hwndMag, 0);
+
+
             NativeMethods.InvalidateRect(hwndMag, IntPtr.Zero, true);
         }
 
         public void SetNormalStyle()
         {
-            ResetColorEffect();
-            SetAlpha(255);      
+            NativeMethods.ShowWindow(hwndMag, 9);
+            SetColorEffect();
             NativeMethods.InvalidateRect(hwndMag, IntPtr.Zero, true);
         }
 
@@ -74,11 +75,11 @@ namespace Magification.API
             {
                 transform = new float[25]
                 {
-                    0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0,
-                    0, 0, 0, 1, 0,
-                    0.51f, 0.87f, 1, 0, 1,
+                    1.0f,  0.0f,  0.0f,  0.0f,  0.0f,
+                    0.0f,  1.0f,  0.0f,  0.0f,  0.0f,
+                    0.0f,  0.0f,  1.0f,  0.0f,  0.0f,
+                    0.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+                    0.07f,  0.07f,  0.07f,  0.0f,  1.0f
                 }
             };
 
@@ -164,7 +165,7 @@ namespace Magification.API
                 NativeMethods.MagUninitialize();
         }
 
-        protected virtual void Dispose(bool disposing)
+        public virtual void Dispose(bool disposing)
         {
             timer.Stop();
             RemoveMagnifier();

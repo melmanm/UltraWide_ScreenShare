@@ -49,7 +49,7 @@ namespace UlraWide_ScreenShare
 
         public Point GridStartScreenLocation => contentGrid.PointToScreen(new Point(0, 0));
         public Point GridEndScreenLocation => new Point(GridStartScreenLocation.X + contentGrid.ActualWidth, GridStartScreenLocation.Y + contentGrid.ActualHeight);
-        public Point GridStartWindowLocation => new Point(WindowBorderThickness, WindowBorderThickness + HideShowBarHeight + (_isTopBarVisible ? MenuBarHeight : 0.0));
+        public Point GridStartWindowLocation => new Point(WindowBorderThickness, WindowBorderThickness + HideShowBarHeight + (_isTopBarVisible ? MenuBarHeight : 0));
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             _magnifier.SetupMagnifier(GridStartWindowLocation, (int)contentGrid.ActualWidth, (int)contentGrid.ActualHeight);
@@ -151,8 +151,7 @@ namespace UlraWide_ScreenShare
         private void ThumbSE_DragDelta(object sender, DragDeltaEventArgs e) => _resizeHelper.Resize(DragDeltaDirection.SE, e);
         private void ThumbSW_DragDelta(object sender, DragDeltaEventArgs e) => _resizeHelper.Resize(DragDeltaDirection.SW, e);
 
-
-        private void ArrowUpButton_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        private void ArrowUpButtonClickStoryBoard_Completed(object sender, EventArgs e)
         {
             //_isTopBarVisible = false;
             //_magnifier.LocationToMagnify = GridStartScreenLocation;
@@ -160,21 +159,25 @@ namespace UlraWide_ScreenShare
             //_magnifier.ResizeMagnifier(GridStartWindowLocation, (int)contentGrid.ActualWidth, (int)contentGrid.ActualHeight);
         }
 
-        private void ArrowDownButton_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        private void ArrowDownButton_Click(object sender, RoutedEventArgs e)
         {
-            //_isTopBarVisible = true;
-            //_magnifier.LocationToMagnify = GridStartScreenLocation;
-            //_magnifier.UpdateMaginifier();
-            //_magnifier.ResizeMagnifier(GridStartWindowLocation, (int)contentGrid.ActualWidth, (int)contentGrid.ActualHeight);
+            var Y = GridStartScreenLocation.Y + MenuBarHeight;
+            _magnifier.LocationToMagnify = new Point(GridStartScreenLocation.X, Y);
+            _magnifier.UpdateMaginifier();
+            _isTopBarVisible = true;
+            
+            _magnifier.ResizeMagnifier(GridStartWindowLocation, (int)contentGrid.ActualWidth, (int)contentGrid.ActualHeight);
+
         }
 
-
-        private void ArrowUpButtonClickStoryBoard_Completed(object sender, EventArgs e)
+        private void ArrowUpButton_Click(object sender, RoutedEventArgs e)
         {
-            _isTopBarVisible = false;
-            _magnifier.LocationToMagnify = GridStartScreenLocation;
+            var Y = GridStartScreenLocation.Y - MenuBarHeight;
+            _magnifier.LocationToMagnify = new Point(GridStartScreenLocation.X, Y);
             _magnifier.UpdateMaginifier();
+            _isTopBarVisible = false; 
             _magnifier.ResizeMagnifier(GridStartWindowLocation, (int)contentGrid.ActualWidth, (int)contentGrid.ActualHeight);
+           
         }
     }
 
